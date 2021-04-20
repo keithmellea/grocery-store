@@ -6,7 +6,7 @@ export const addToCart = (newItem) => {
    return {
       type: ADD,
       newItem: {
-         id: newItem.id,
+         id: newItem,
          count: 1,
       },
    }

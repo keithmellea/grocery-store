@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import ProduceDetails from './ProduceDetails';
+import {addToCart} from '../../store/cart';
 import './ProduceList.css';
 
 function ProduceList() {
