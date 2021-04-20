@@ -2,10 +2,13 @@ import produceData from '../mockData/produce.json'
 
 const ADD = "cart/ADD"
 
-export const addToCart = () => {
+export const addToCart = (newItem) => {
    return {
       type: ADD,
-      produceData
+      newItem.id: {
+         id: newItem.id,
+         count: 1,
+      },
    }
 }
 
